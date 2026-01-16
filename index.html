@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sky Mega Deals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <h1>Sky <span>Mega</span> Deals</h1>
+  <button id="loginBtn">Sign in with Google</button>
+</header>
+
+<!-- TOP AUTO SLIDER -->
+<section class="slider">
+  <div id="sliderContent"></div>
+</section>
+
+<!-- ADMIN PANEL -->
+<section class="admin">
+  <h2>Add Product</h2>
+  <input id="title" placeholder="Product Title">
+  <input id="price" placeholder="Price (USD)">
+  <input id="image" placeholder="Image URL">
+  <textarea id="desc" placeholder="Description"></textarea>
+  <select id="category">
+    <option value="Hoodies">Hoodies</option>
+    <option value="Boots">Boots</option>
+    <option value="Perfumes">Perfumes</option>
+  </select>
+  <button onclick="addProduct()">Add Product</button>
+</section>
+
+<!-- PRODUCT SECTIONS -->
+<div id="products"></div>
+
+<script src="script.js"></script>
+</body>
+  </html>
